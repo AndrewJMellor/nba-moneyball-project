@@ -1,0 +1,111 @@
+---
+title: "Reproducible Data Analysis Project-NBA tarting 5"
+author: "Andrew Mellor"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+---
+
+## Overview
+
+This assessment task allows you to consolidate and apply the concepts and skills you've learnt throughout the semester. This assessment requires you to generate a reproducible data analysis project. 
+
+Your reproducible data analysis project will be hosted as a repository on GitHub and you are required to submit the URL to your GitHub repository.
+
+ 
+###Scenario and Aim of the Data Analysis Project
+
+You are a data analyst with the Chicago Bulls competing in the NBA (national basketball association). In the most recent NBA season (2018-19), your team placed 27th out of 30 (for win-loss record). Your team's budget for player contracts next season  is $118 million, ranked 26th out of 30 (for the purpose of this assignment, next season is 2019-20). For context, the team with the highest payroll budget is Portland with $148 million, while the best performing team was Milwaukee Bucks (who clinched the best league record in 2018-19 (Links to an external site.)) with $131 million. 
+
+You have been tasked by the general manager of Chicago Bulls to find the best five starting players (one from each position (Links to an external site.)) your team can afford. (Make sure you don't use up all of your money on just these five players, you still need to fill a full team roster, but are just focussed on finding five starting players here). You can choose players that are already playing for Chicago Bulls, you just need to prove that they are worth it.
+
+ 
+##Load Required Packages
+````{r packages}
+library(tidyverse) # include all required packages at the start
+````
+
+
+##Data Source
+Statistics from the 2018-19 NBA season. The following data sets have been provided by Dr Jocelyn Mara as part of this project.The original source for each set is also listed below:
+
+1. 2018-19_nba_player_statistics.csv :  sourced from [basketball-reference.com](https://www.basketball-reference.com/leagues/NBA_2019_totals.html)
+2. 2018-19_nba_player-salaries.csv :  sourced from [hoopshype.com/salaries](https://hoopshype.com/salaries/)
+3. 2019-20_nba_team-payroll.csv : sourced from [hoopshype.com/salaries](https://hoopshype.com/salaries/)
+4. 2018-19_nba_team-statistics_1.csv : sourced from [basketball-reference.com](https://www.basketball-reference.com/leagues/NBA_2019.html)
+5. 2018-19_nba_team-statistics_2.csv : sourced from [basketball-reference.com](https://www.basketball-reference.com/leagues/NBA_2019.html)
+
+Click [here](https://unicanberra.instructure.com/courses/7493/pages/reproducible-data-analysis-project-data-descriptions) to to find a description of each of the variables in these data sets. 
+
+###Read Data
+
+```{r read} 
+# read in the data sets from the working directory
+statistics <-read_csv("2018-19_nba_player_statistics.csv")
+salaries <-read_csv("2018-19_nba_player-salaries.csv")
+payoll <-read_csv("2019-20_nba_team-payroll.csv")
+team_statistics_1 <-read_csv("2018-19_nba_team_statistics_1.csv")
+team_statistics_2 <-read_csv("2018-19_nba_team_statistics_2.csv")
+```
+
+
+## A New Output Format
+
+`html_pretty` in the [**prettydoc**](https://github.com/yixuan/prettydoc/)
+package is a new output format for creating HTML documents from R Markdown files.
+`html_pretty` is more lightweight compared to `html_document`, and is more
+stylish than `html_vignette` when creating package vignettes.
+
+## New Styles
+
+`html_pretty` currently supports three page themes (`cayman`, `tactile` and
+`architect`), and two syntax highlight styles (`github` and `vignette`).
+The theme and highlight styles can be specified in the document metadata,
+for example:
+
+```yaml
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
+```
+
+## Your Familiar Tools
+
+Feel free to use the `knitr` infrastructure with dozens of tunable options in
+your document.
+
+```{r fig.width=6, fig.height=6, fig.align='center'}
+set.seed(123)
+n <- 1000
+x1  <- matrix(rnorm(n), ncol = 2)
+x2  <- matrix(rnorm(n, mean = 3, sd = 1.5), ncol = 2)
+x   <- rbind(x1, x2)
+head(x)
+smoothScatter(x, xlab = "x1", ylab = "x2")
+```
+
+You can include code snippets of languages other than R, but note that
+the block header has no curly brackets around the language name.
+
+```cpp
+// [[Rcpp::export]]
+NumericVector timesTwo(NumericVector x) {
+    return x * 2;
+}
+```
+
+You can also write math expressions, e.g. $Y = X\beta + \epsilon$,
+footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+
+```{r, echo=FALSE, results='asis'}
+knitr::kable(head(iris, 10))
+```
+
+## Stay Tuned
+
+Please visit the [development page](https://github.com/yixuan/prettydoc/) of the 
+`prettydoc` package for latest updates and news. Comments, bug reports and
+pull requests are always welcome.
