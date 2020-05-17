@@ -11,7 +11,7 @@ As a data analyst with the Chicago Bulls competing in the NBA (national basketba
 I have been tasked by the general manager of Chicago Bulls to find the best five starting players (one from each position (Links to an external site.)) that we, the Bulls can afford. (Make sure you don't use up all of your money on just these five players, you still need to fill a full team roster, but are just focussed on finding five starting players here). You can choose players that are already playing for Chicago Bulls, you just need to prove that they are worth it.
 
 
-**It is an assumption that users know the different playing positions:
+**It is an assumption that users know the different playing positions:  
 Centre or 5  
 Power Forward or 4  
 Small Forward or 3  
