@@ -6,9 +6,9 @@ This assessment task allows me to consolidate and apply the concepts and skills 
  
 ### Aim of the Data Analysis Project
 
-As a data analyst with the Chicago Bulls competing in the NBA (national basketball association). In the most recent NBA season (2018-19), the Bulls placed 27th out of 30 (for win-loss record). The team's budget for player contracts in 2019-20 is $118 million, ranked 26th out of 30. For context, the team with the highest payroll budget is Portland with $148 million, while the best performing team was Milwaukee Bucks (who clinched the best league record in 2018-19 (Links to an external site.)) with $131million. 
+As a data analyst with the Chicago Bulls competing in the NBA (national basketball association). In the most recent NBA season (2018-19), the Bulls placed 27th out of 30 (for win-loss record). The team's budget for player contracts in 2019-20 is $118 million, ranked 26th out of 30. For context, the team with the highest payroll budget is Portland with $148 million, while the best performing team was Milwaukee Bucks (who clinched the best league record in 2018-19) with $131million. 
 
-I have been tasked by the general manager of Chicago Bulls to find the best five starting players (one from each position (Links to an external site.)) that we, the Bulls can afford. (Make sure you don't use up all of your money on just these five players, you still need to fill a full team roster, but are just focussed on finding five starting players here). You can choose players that are already playing for Chicago Bulls, you just need to prove that they are worth it.
+I have been tasked by the general manager of Chicago Bulls to find the best five starting players (one from each position) that we, the Bulls can afford. (Make sure you don't use up all of your money on just these five players, you still need to fill a full team roster, but are just focussed on finding five starting players here). You can choose players that are already playing for Chicago Bulls, you just need to prove that they are worth it.
 
 
 **It is an assumption that users know the different playing positions:  
