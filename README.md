@@ -32,4 +32,13 @@ The data for the 2018-19 NBA Season is sourced from various wesbites have been p
 
 Click [here](https://unicanberra.instructure.com/courses/7493/pages/reproducible-data-analysis-project-data-descriptions) to to find a description of each of the variables in these data sets.
 
+### GitHub Repository
+The GitHUb repository holds:
+1. a folder (data) containing all the necessary raw data files 
+2. the necessary RStudio files (nba-moneyball-project.Rproj & analysis.R)
+3. the necessary RStudio RMarkdown file (nba-moneyball-project-final.Rmd)
+4. the final html report
+5. a folder (figs) containging logos and a visual from the report
+6. this README.md with a brief overview of the project and a description of the GitHub repository and its contents.
+
 **It is reproducible and provides visualisations.**
